@@ -1,4 +1,4 @@
-module git.zgtest.club/bhex/df-common
+module cr-common
 
 go 1.13
 
