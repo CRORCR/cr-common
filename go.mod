@@ -1,4 +1,4 @@
-module cr-common
+module github.com/CRORCR/cr-common
 
 go 1.13
 
