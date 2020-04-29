@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package student;
+
+message StudentReq{
+    int32 id = 1;
+    string name = 2;
+    float amount = 3;
+}
+
+message StudentResp{
+    int32 status = 1;
+    string msg = 2;
+}
+
+service GetStudent{
+ rpc GetStudent(StudentReq)returns(StudentResp){}
+}

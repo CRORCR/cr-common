@@ -1,0 +1,16 @@
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/student/*.proto
+//protoc -I . --go_out=plugins=grpc:. ./student.proto
+
+
+
+
+
+--proto_path 或者 -I 参数用以指定所编译源码的搜索路径
+--go_out 参数是用来指定 protoc-gen-go 插件的工作方式 和 go 代码目录架构的生成位置
+主要的两个参数为 plugins 和 paths,参数之间用逗号隔开,代表 生成 go 代码所使用的插件 和 生成的 go 代码的目录怎样架构。
+最后加上冒号来指定代码目录架构的生成位置，例如：--go_out=plugins=grpc,paths=import:.
+source_relative 代表按照 proto 源文件的目录层级去创建 go 代码的目录层级
+，如果目录已存在则不用创建。
+
+--go_out=paths=source_relative:.
+为了让加了 option go_package 声明的 proto 文件可以将 go 代码编译到与其同目录。
