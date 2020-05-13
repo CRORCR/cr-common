@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package his_transfer;
+option go_package = "github.com/CRORCR/cr-common/proto/his_transfer";
+
+
+message GetHisTransferReq {
+    string uuid = 1;
+    string fullName = 2;
+    string direction = 3;
+    string startTime = 4;
+    string endTime = 5;
+    string page = 6;
+    string size = 7;
+}
+
+
+message GetHisTransferResp {
+    string uuid = 1;
+    string fullName = 2;
+    string currency = 3;
+    string type = 4;
+    string direction = 5;
+    string amount = 6;
+    string remark = 7;
+    string reason = 8;
+    string status = 9;
+    string createdAt = 10;
+}
+
+service HisTransfer {
+    rpc GetHisTransfer (GetHisTransferReq) returns (GetHisTransferResp) {
+    }
+}
