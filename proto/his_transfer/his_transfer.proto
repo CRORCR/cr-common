@@ -3,7 +3,6 @@ syntax = "proto3";
 package his_transfer;
 option go_package = "github.com/CRORCR/cr-common/proto/his_transfer";
 
-
 message GetHisTransferReq {
     string uuid = 1;
     string fullName = 2;
@@ -12,8 +11,14 @@ message GetHisTransferReq {
     string endTime = 5;
     string page = 6;
     string size = 7;
+    message Data {
+           int32	totalRecord=1;
+           int32	currentPage=2;
+           int32    pageSize=3;
+           int32    totalPages=4;
+           bool	    hasNext=5;
+        }
 }
-
 
 message GetHisTransferResp {
     string uuid = 1;
