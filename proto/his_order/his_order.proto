@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package account;
+option go_package = "github.com/CRORCR/cr-common/proto/his_order";
+
+service Account {
+    rpc GetBalance (GetBalanceReq) returns (GetBalanceResp) {
+    }
+}
+
+message GetBalanceResp {
+    string uuid = 1;
+    string fullName = 2;
+    string direction = 3;
+    string between = 4;
+    string page = 5;
+    string size = 6;
+}
+
+
+message GetBalanceReq {
+    int64 user_id = 1;
+    int32 account_type = 2; //币币账户 母账号填1
+    int32 account_index = 3; //默认0, 主账户
+    string token_ids = 4; //如果要查询某几个token的资产信息，使用逗号拼接，token_ids=token1,token2
+}
+
+
+
+
