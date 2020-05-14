@@ -23,7 +23,7 @@ message Pagination {
 
 message GetDepositResp {
     message Logs {
-       string uuid = 1;
+       string engineAccount = 1;
        string mark = 2;
        string tag = 3;
        int32 outputIndex = 4;
@@ -43,11 +43,12 @@ message GetDepositResp {
     string msg = 2;
     repeated Logs logs = 3;
     Pagination pagination = 4;
+    optional com.road.ddt.proto.command.RankInfoRes rankInfoRes = 52;
 }
 
 message GetWithdrawResp {
     message Logs {
-       string uuid = 1;
+       string uniqueUid = 1;
        string mark = 2;
        string tag = 3;
        string passedAt = 4;
