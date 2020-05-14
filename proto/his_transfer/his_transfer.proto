@@ -9,28 +9,34 @@ message GetHisTransferReq {
     string direction = 3;
     string startTime = 4;
     string endTime = 5;
-    string page = 6;
-    string size = 7;
-    message Data {
-           int32	totalRecord=1;
-           int32	currentPage=2;
-           int32    pageSize=3;
-           int32    totalPages=4;
-           bool	    hasNext=5;
-        }
+    int32 page = 6;
+    int32 size = 7;
 }
 
 message GetHisTransferResp {
-    string uuid = 1;
-    string fullName = 2;
-    string currency = 3;
-    string type = 4;
-    string direction = 5;
-    float amount = 6;
-    string remark = 7;
-    string reason = 8;
-    int32 status = 9;
-    string createdAt = 10;
+    message Logs {
+       string uuid = 1;
+       string fullName = 2;
+       string currency = 3;
+       int32 type = 4;
+       int32 direction = 5;
+       float amount = 6;
+       string remark = 7;
+       string reason = 8;
+       int32 status = 9;
+       string createdAt = 10;
+    }
+     message Pagination {
+       int32	totalRecord=1;
+       int32	currentPage=2;
+       int32    pageSize=3;
+       int32    totalPages=4;
+       bool	    hasNext=5;
+     }
+    int32 status = 1;
+    string msg = 2;
+    repeated Logs logs = 3;
+    Pagination pagination = 4;
 }
 
 service HisTransfer {
