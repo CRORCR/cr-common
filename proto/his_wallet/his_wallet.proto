@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+package his_transfer;
+option go_package = "github.com/CRORCR/cr-common/proto/his_wallet";
+
+message GetWalletReq {
+    string uuid = 1;
+    string currency = 2;
+    string status = 3;
+    string startTime = 4;
+    string endTime = 5;
+    int32 page = 6;
+    int32 size = 7;
+}
+
+message Pagination {
+   int32	totalRecord=1;
+   int32	currentPage=2;
+   int32    pageSize=3;
+   int32    totalPages=4;
+   bool	    hasNext=5;
+}
+
+message GetDepositResp {
+    message Logs {
+       string uuid = 1;
+       string mark = 2;
+       string tag = 3;
+       int32 outputIndex = 4;
+       int32 confirmations = 5;
+       string txId=6;
+       string height=7;
+       string address=8;
+       string sourceAddress=9;
+       int32 status = 10;
+       float amount = 11;
+       int32 user_id = 12;
+       string currency = 13;
+       string createdAt = 14;
+       string updatedAt = 15;
+    }
+    int32 status = 1;
+    string msg = 2;
+    repeated Logs logs = 3;
+    Pagination pagination = 4;
+}
+
+message GetWithdrawResp {
+    message Logs {
+       string uuid = 1;
+       string mark = 2;
+       string tag = 3;
+       string passedAt = 4;
+       int32 confirmations = 5;
+       string txId=6;
+       int32 status = 7;
+       float amount = 8;
+       int32 user_id = 9;
+       string sourceAddress=10;
+       string address=11;
+       string nonce=12;
+       float fee=13;
+       float network_fee=14;
+       string currency = 15;
+       string createdAt = 16;
+       string updatedAt = 17;
+    }
+    int32 status = 1;
+    string msg = 2;
+    repeated Logs logs = 3;
+    Pagination pagination = 4;
+}
+
+service HisWallet {
+    rpc GetHisDeposit (GetWalletReq) returns (GetDepositResp) {
+    }
+    rpc GetHisWithdraw (GetWalletReq) returns (GetWithdrawResp) {
+    }
+}
