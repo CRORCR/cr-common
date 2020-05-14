@@ -21,11 +21,11 @@ var _ = math.Inf
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 
 type Pagination struct {
-	TotalRecord          int32    `protobuf:"varint,1,opt,name=totalRecord,proto3" json:"totalRecord,omitempty"`
-	CurrentPage          int32    `protobuf:"varint,2,opt,name=currentPage,proto3" json:"currentPage,omitempty"`
-	PageSize             int32    `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize,omitempty"`
-	TotalPages           int32    `protobuf:"varint,4,opt,name=totalPages,proto3" json:"totalPages,omitempty"`
-	HasNext              bool     `protobuf:"varint,5,opt,name=hasNext,proto3" json:"hasNext,omitempty"`
+	TotalRecord          int32    `protobuf:"varint,1,opt,name=totalRecord,proto3" json:"totalRecord"`
+	CurrentPage          int32    `protobuf:"varint,2,opt,name=currentPage,proto3" json:"currentPage"`
+	PageSize             int32    `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize"`
+	TotalPages           int32    `protobuf:"varint,4,opt,name=totalPages,proto3" json:"totalPages"`
+	HasNext              bool     `protobuf:"varint,5,opt,name=hasNext,proto3" json:"hasNext"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`

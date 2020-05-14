@@ -1,6 +1,7 @@
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/student/*.proto
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/his_transfer/*.proto
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/his_wallet/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/base/*.proto
 //protoc -I . --go_out=plugins=grpc:. ./student.proto
 
 

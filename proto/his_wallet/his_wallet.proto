@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package his_transfer;
 option go_package = "github.com/CRORCR/cr-common/proto/his_wallet";
+import "proto/base/base.proto";
 
 message GetWalletReq {
     string uuid = 1;
@@ -42,8 +43,7 @@ message GetDepositResp {
     int32 status = 1;
     string msg = 2;
     repeated Logs logs = 3;
-    Pagination pagination = 4;
-    optional com.road.ddt.proto.command.RankInfoRes rankInfoRes = 52;
+    base.Pagination pag = 4;
 }
 
 message GetWithdrawResp {
@@ -69,7 +69,7 @@ message GetWithdrawResp {
     int32 status = 1;
     string msg = 2;
     repeated Logs logs = 3;
-    Pagination pagination = 4;
+    base.Pagination pag = 4;
 }
 
 service HisWallet {

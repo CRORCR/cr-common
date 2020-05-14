@@ -1,7 +1,10 @@
 syntax = "proto3";
 
+
 package his_transfer;
 option go_package = "github.com/CRORCR/cr-common/proto/his_transfer";
+import "proto/base/base.proto";
+
 
 message GetHisTransferReq {
     string uuid = 1;
@@ -11,14 +14,6 @@ message GetHisTransferReq {
     string endTime = 5;
     int32 page = 6;
     int32 size = 7;
-}
-
-message Pagination {
-   int32	totalRecord=1;
-   int32	currentPage=2;
-   int32    pageSize=3;
-   int32    totalPages=4;
-   bool	    hasNext=5;
 }
 
 message GetHisTransferResp {
@@ -37,7 +32,7 @@ message GetHisTransferResp {
     int32 status = 1;
     string msg = 2;
     repeated Logs logs = 3;
-    Pagination pagination = 4;
+    base.Pagination pag = 4;
 }
 
 service HisTransfer {
