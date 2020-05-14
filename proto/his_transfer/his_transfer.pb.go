@@ -175,16 +175,16 @@ func (m *GetHisTransferResp) GetPagination() *GetHisTransferResp_Pagination {
 }
 
 type GetHisTransferResp_Logs struct {
-	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid,omitempty"`
-	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName,omitempty"`
-	Currency             string   `protobuf:"bytes,3,opt,name=currency,proto3" json:"currency,omitempty"`
+	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid"`
+	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName"`
+	Currency             string   `protobuf:"bytes,3,opt,name=currency,proto3" json:"currency"`
 	Type                 string   `protobuf:"bytes,4,opt,name=type,proto3" json:"type,omitempty"`
-	Direction            int32    `protobuf:"varint,5,opt,name=direction,proto3" json:"direction,omitempty"`
-	Amount               float32  `protobuf:"fixed32,6,opt,name=amount,proto3" json:"amount,omitempty"`
-	Remark               string   `protobuf:"bytes,7,opt,name=remark,proto3" json:"remark,omitempty"`
-	Reason               string   `protobuf:"bytes,8,opt,name=reason,proto3" json:"reason,omitempty"`
-	Status               int32    `protobuf:"varint,9,opt,name=status,proto3" json:"status,omitempty"`
-	CreatedAt            string   `protobuf:"bytes,10,opt,name=createdAt,proto3" json:"createdAt,omitempty"`
+	Direction            int32    `protobuf:"varint,5,opt,name=direction,proto3" json:"direction"`
+	Amount               float32  `protobuf:"fixed32,6,opt,name=amount,proto3" json:"amount"`
+	Remark               string   `protobuf:"bytes,7,opt,name=remark,proto3" json:"remark"`
+	Reason               string   `protobuf:"bytes,8,opt,name=reason,proto3" json:"reason"`
+	Status               int32    `protobuf:"varint,9,opt,name=status,proto3" json:"status"`
+	CreatedAt            string   `protobuf:"bytes,10,opt,name=createdAt,proto3" json:"createdAt"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
