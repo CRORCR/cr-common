@@ -17,21 +17,26 @@ message GetOrderReq {
 }
 
 message GetOrderResp {
-    string   id                 = 1;
-    string   timestamp          = 2;
-    string   makerOrderID       = 3;
-    string   takerOrderID       = 4;
-    string   side               = 5;
-    float    size               = 6;
-    float    price              = 7;
-    string   symbol             = 8;
-    float    makerFeeTotal      = 9;
-    float    takerFeeTotal      = 10;
-    string   makerFeeCurrency   = 11;
-    string   takerFeeCurrency   = 12;
-    string   makerAccount       = 13;
-    string   takerAccount       = 14;
-    base.Pagination pag         = 15;
+   message Data{
+       string   id                 = 1;
+       string   timestamp          = 2;
+       string   makerOrderID       = 3;
+       string   takerOrderID       = 4;
+       string   side               = 5;
+       float    size               = 6;
+       float    price              = 7;
+       string   symbol             = 8;
+       float    makerFeeTotal      = 9;
+       float    takerFeeTotal      = 10;
+       string   makerFeeCurrency   = 11;
+       string   takerFeeCurrency   = 12;
+       string   makerAccount       = 13;
+       string   takerAccount       = 14;
+   }
+   int32  status       = 1;
+   string msg          = 2;
+   repeated Data data  = 3;
+   base.Pagination pag = 4;
 }
 
 service HisOtcList {
