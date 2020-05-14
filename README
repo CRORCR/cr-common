@@ -2,9 +2,9 @@ protoc --go_out=plugins=grpc,paths=source_relative:.  proto/student/*.proto
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/his_transfer/*.proto
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/his_wallet/*.proto
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/base/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/otc/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/engine_order/*.proto
 //protoc -I . --go_out=plugins=grpc:. ./student.proto
-
-
 
 
 
@@ -17,3 +17,15 @@ source_relative 代表按照 proto 源文件的目录层级去创建 go 代码�
 
 --go_out=paths=source_relative:.
 为了让加了 option go_package 声明的 proto 文件可以将 go 代码编译到与其同目录。
+
+如果需要引入其他包，就在文件头部引入(不要根路径)
+import "proto/base/base.proto";
+
+message里面就可以用了，包名.结构名
+base.Pagination pag = 4;
+
+proto表示数组:使用repeated关键字
+repeated Logs logs = 3;
+
+proto生成的结构体，json传输默认忽略空值。有时候，我们需要默认值，那就自己手动把所有的(omitempty),替换成空
+

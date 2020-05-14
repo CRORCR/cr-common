@@ -14,5 +14,6 @@ message StudentResp{
 }
 
 service GetStudent{
- rpc GetStudent(StudentReq)returns(StudentResp){}
+    rpc GetStudent(StudentReq)returns(StudentResp){
+    }
 }

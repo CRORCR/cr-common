@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+package his_otc;
+option go_package = "github.com/CRORCR/cr-common/proto/his_otc";
+import "proto/base/base.proto";
+
+message GetOtcReq {
+    string  uuid        = 1;
+    string	status      = 2;
+    string	orderNo     = 3;
+    string  startTime   = 4;
+    string  endTime     = 5;
+    int32   Page        = 6;
+    int32   Size        = 7;
+}
+
+message GetNormalOtcResp {
+    string   service_type= 1; //业务类型 固定值：otc.buy 买入币 | otc.sell 卖出币
+   	string   preload_no  = 2; //委托单号 买入是对应的卖方委托单号
+   	string   billNo      = 3; //OTC订单号
+   	string   currency    = 4;
+   	string   amount      = 5; //数字货币数量 精确到小数点后四位,示例：1.2 改为1.2000
+   	string   uniMember   = 6;
+    int32    status      = 7;
+   	string   createAt    = 8;
+    base.Pagination pag  = 9;
+}
+
+message GetUsdtOtcResp {
+    string   uuid             = 1;
+    string   orderNo          = 2;
+    string   currency         = 3;
+    int32    type             = 4;
+    int32    status           = 5;
+    int32    tid              = 6;
+    string   userName         = 7;
+    string   cardId           = 8;
+    string   initialMoney     = 9;
+    string   realMoney        = 10;
+    string   otcAmount        = 11;
+    string   otcRealAmount    = 12;
+    string   initialAmount    = 13;
+    string   realAmount       = 14;
+    string   initialUnitPrice = 15;
+    string   markupUnitPrice  = 16;
+    string   fee              = 17;
+    string   feeRate          = 18;
+    string   otcFee           = 19;
+    string   otcFeeRate       = 20;
+    string   profitAmount     = 21;
+    string   createdAt        = 22;
+    string   updatedAt        = 23;
+    base.Pagination pag       = 24;
+}
+
+service HisOtcList {
+    rpc GetHisNormalOtc (GetOtcReq) returns (GetNormalOtcResp) {
+    }
+    rpc GetHisUsdtOtc (GetOtcReq) returns (GetUsdtOtcResp) {
+    }
+}
