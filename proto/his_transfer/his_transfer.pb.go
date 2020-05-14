@@ -25,13 +25,13 @@ var _ = math.Inf
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 
 type GetHisTransferReq struct {
-	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid,omitempty"`
-	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName,omitempty"`
-	Direction            string   `protobuf:"bytes,3,opt,name=direction,proto3" json:"direction,omitempty"`
-	StartTime            string   `protobuf:"bytes,4,opt,name=startTime,proto3" json:"startTime,omitempty"`
-	EndTime              string   `protobuf:"bytes,5,opt,name=endTime,proto3" json:"endTime,omitempty"`
-	Page                 int32    `protobuf:"varint,6,opt,name=page,proto3" json:"page,omitempty"`
-	Size                 int32    `protobuf:"varint,7,opt,name=size,proto3" json:"size,omitempty"`
+	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid"`
+	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName"`
+	Direction            string   `protobuf:"bytes,3,opt,name=direction,proto3" json:"direction"`
+	StartTime            string   `protobuf:"bytes,4,opt,name=startTime,proto3" json:"startTime"`
+	EndTime              string   `protobuf:"bytes,5,opt,name=endTime,proto3" json:"endTime"`
+	Page                 int32    `protobuf:"varint,6,opt,name=page,proto3" json:"page"`
+	Size                 int32    `protobuf:"varint,7,opt,name=size,proto3" json:"size"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -112,11 +112,11 @@ func (m *GetHisTransferReq) GetSize() int32 {
 }
 
 type Pagination struct {
-	TotalRecord          int32    `protobuf:"varint,1,opt,name=totalRecord,proto3" json:"totalRecord,omitempty"`
-	CurrentPage          int32    `protobuf:"varint,2,opt,name=currentPage,proto3" json:"currentPage,omitempty"`
-	PageSize             int32    `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize,omitempty"`
-	TotalPages           int32    `protobuf:"varint,4,opt,name=totalPages,proto3" json:"totalPages,omitempty"`
-	HasNext              bool     `protobuf:"varint,5,opt,name=hasNext,proto3" json:"hasNext,omitempty"`
+	TotalRecord          int32    `protobuf:"varint,1,opt,name=totalRecord,proto3" json:"totalRecord"`
+	CurrentPage          int32    `protobuf:"varint,2,opt,name=currentPage,proto3" json:"currentPage"`
+	PageSize             int32    `protobuf:"varint,3,opt,name=pageSize,proto3" json:"pageSize"`
+	TotalPages           int32    `protobuf:"varint,4,opt,name=totalPages,proto3" json:"totalPages"`
+	HasNext              bool     `protobuf:"varint,5,opt,name=hasNext,proto3" json:"hasNext"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
@@ -183,10 +183,10 @@ func (m *Pagination) GetHasNext() bool {
 }
 
 type GetHisTransferResp struct {
-	Status               int32                      `protobuf:"varint,1,opt,name=status,proto3" json:"status,omitempty"`
-	Msg                  string                     `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg,omitempty"`
-	Logs                 []*GetHisTransferResp_Logs `protobuf:"bytes,3,rep,name=logs,proto3" json:"logs,omitempty"`
-	Pagination           *Pagination                `protobuf:"bytes,4,opt,name=pagination,proto3" json:"pagination,omitempty"`
+	Status               int32                      `protobuf:"varint,1,opt,name=status,proto3" json:"status"`
+	Msg                  string                     `protobuf:"bytes,2,opt,name=msg,proto3" json:"msg"`
+	Logs                 []*GetHisTransferResp_Logs `protobuf:"bytes,3,rep,name=logs,proto3" json:"logs"`
+	Pagination           *Pagination                `protobuf:"bytes,4,opt,name=pagination,proto3" json:"pagination"`
 	XXX_NoUnkeyedLiteral struct{}                   `json:"-"`
 	XXX_unrecognized     []byte                     `json:"-"`
 	XXX_sizecache        int32                      `json:"-"`
@@ -246,16 +246,16 @@ func (m *GetHisTransferResp) GetPagination() *Pagination {
 }
 
 type GetHisTransferResp_Logs struct {
-	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid,omitempty"`
-	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName,omitempty"`
-	Currency             string   `protobuf:"bytes,3,opt,name=currency,proto3" json:"currency,omitempty"`
-	Type                 string   `protobuf:"bytes,4,opt,name=type,proto3" json:"type,omitempty"`
-	Direction            int32    `protobuf:"varint,5,opt,name=direction,proto3" json:"direction,omitempty"`
-	Amount               float32  `protobuf:"fixed32,6,opt,name=amount,proto3" json:"amount,omitempty"`
-	Remark               string   `protobuf:"bytes,7,opt,name=remark,proto3" json:"remark,omitempty"`
-	Reason               string   `protobuf:"bytes,8,opt,name=reason,proto3" json:"reason,omitempty"`
-	Status               int32    `protobuf:"varint,9,opt,name=status,proto3" json:"status,omitempty"`
-	CreatedAt            string   `protobuf:"bytes,10,opt,name=createdAt,proto3" json:"createdAt,omitempty"`
+	Uuid                 string   `protobuf:"bytes,1,opt,name=uuid,proto3" json:"uuid"`
+	FullName             string   `protobuf:"bytes,2,opt,name=fullName,proto3" json:"fullName"`
+	Currency             string   `protobuf:"bytes,3,opt,name=currency,proto3" json:"currency"`
+	Type                 string   `protobuf:"bytes,4,opt,name=type,proto3" json:"type"`
+	Direction            int32    `protobuf:"varint,5,opt,name=direction,proto3" json:"direction"`
+	Amount               float32  `protobuf:"fixed32,6,opt,name=amount,proto3" json:"amount"`
+	Remark               string   `protobuf:"bytes,7,opt,name=remark,proto3" json:"remark"`
+	Reason               string   `protobuf:"bytes,8,opt,name=reason,proto3" json:"reason"`
+	Status               int32    `protobuf:"varint,9,opt,name=status,proto3" json:"status"`
+	CreatedAt            string   `protobuf:"bytes,10,opt,name=createdAt,proto3" json:"createdAt"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
 	XXX_sizecache        int32    `json:"-"`
