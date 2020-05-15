@@ -15,7 +15,7 @@ message GetWalletReq {
 }
 
 message GetDepositResp {
-    message Logs {
+    message Data {
        string engineAccount = 1;
        string mark          = 2;
        string tag           = 3;
@@ -32,14 +32,12 @@ message GetDepositResp {
        string createdAt     = 14;
        string updatedAt     = 15;
     }
-    int32   status      = 1;
-    string  msg         = 2;
-    repeated Logs logs  = 3;
-    base.Pagination pag = 4;
+    repeated Data data          = 1;
+    base.Pagination pagination  = 2;
 }
 
 message GetWithdrawResp {
-    message Logs {
+    message Data {
        string uniqueUid = 1;
        string mark      = 2;
        string tag       = 3;
@@ -58,10 +56,8 @@ message GetWithdrawResp {
        string createdAt = 16;
        string updatedAt = 17;
     }
-    int32  status   = 1;
-    string msg      = 2;
-    repeated Logs logs = 3;
-    base.Pagination pag = 4;
+    repeated Data data          = 1;
+    base.Pagination pagination  = 2;
 }
 
 service HisWallet {

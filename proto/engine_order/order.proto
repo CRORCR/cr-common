@@ -33,13 +33,11 @@ message GetOrderResp {
        string   makerAccount       = 13;
        string   takerAccount       = 14;
    }
-   int32  status       = 1;
-   string msg          = 2;
-   repeated Data data  = 3;
-   base.Pagination pag = 4;
+   repeated Data data          = 1;
+   base.Pagination pagination  = 2;
 }
 
-service HisOtcList {
+service HisOrderList {
     rpc GetHisOrder (GetOrderReq) returns (GetOrderResp) {
     }
 }
