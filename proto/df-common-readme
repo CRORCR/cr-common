@@ -10,3 +10,4 @@ protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_a
 protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/his_wallet/*.proto
 
 protoc --go_out=plugins=grpc,paths=source_relative:.  proto/invitee/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/partner/*.proto

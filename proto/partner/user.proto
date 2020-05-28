@@ -11,6 +11,8 @@ message AddUserReq {
     string project  = 4;
     string rate     = 5; //返佣比例
     string currency = 6;
+    string invitee_account = 7;
+    string invitee_name    = 8;
 }
 
 message AddUserResp {
