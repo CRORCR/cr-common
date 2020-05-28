@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package partner;
+option go_package = "github.com/CRORCR/cr-common/proto/partner";
+import "proto/base/base.proto";
+
+message AddUserReq {
+    string uuid     = 1;
+    string mobile   = 2; //手机号或者邮箱
+    string name     = 3;
+    string project  = 4;
+    string rate     = 5; //返佣比例
+    string currency = 6;
+}
+
+message AddUserResp {
+   string date           = 1;
+   string error_message  = 2;
+}
+
+//查询合伙人
+message GetUserReq {
+    string uuid     = 1;
+    string invitee_account = 2;
+    string startTime= 3;
+    string endTime  = 4;
+    string level    = 5;
+    string type     = 6; //ZG:后台查询
+    int32  page     = 7;
+    int32  size     = 8;
+}
+
+message GetUserResp {
+    message Data {
+        string invitee_account  = 1; //上级合伙人ID
+        string uuid             = 2; //合伙人ID
+        string name             = 3; //合伙人名称
+        string rate             = 4; //分佣比例
+        string mobile           = 5;
+        string project          = 6;
+        string currency         = 7;
+        string createdAt        = 8; //邀请时间
+        string updatedAt        = 9;
+    }
+    repeated Data data          = 1;
+    base.Pagination pagination  = 2;
+}
+
+message NoticeReq {
+    string uuid  = 1;
+}
+
+message NoticeResp {
+    string uuid     = 1;
+    string type     = 2;
+    string content  = 3; //正文
+}
+
+service User {
+    rpc AddUser (AddUserReq) returns (AddUserResp) {
+    }
+    rpc GetUser (GetUserReq) returns (GetUserResp) {
+    }
+    rpc GetNoticeReq (NoticeReq) returns (NoticeResp) {
+    }
+}

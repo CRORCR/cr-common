@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package partner;
+option go_package = "github.com/CRORCR/cr-common/proto/invitee";
+import "proto/base/base.proto";
+
+message GetInviteeReq {
+    string uuid             = 1; //查询用户上级链表
+    string invitee_account  = 2; //查询用户一级邀请
+}
+
+message GetInviteeResp {
+    string uuid             = 1;
+    string invitee_account  = 2; //上级用户
+    string partner_account  = 3; //一级用户
+    string invitee_info     = 4; //邀请链表
+    string created_at       = 5;
+    string updated_at       = 6;
+}
+
+message GetLowerUserResp {
+    message Data {
+        string uuid             = 1;
+        string invitee_account  = 2; //上级用户
+        string partner_account  = 3; //一级用户
+        string invitee_info     = 4; //邀请链表
+        string created_at       = 5;
+        string updated_at       = 6;
+    }
+    repeated Data data          = 1;
+    base.Pagination pagination  = 2;
+}
+
+message SetInviteeReq {
+    string uuid             = 1;
+    string invitee_account  = 2;
+}
+
+message SetInviteeResp {
+    string date           = 1;
+    string error_message  = 2;
+}
+
+service Invitee {
+    rpc GetInvitee (GetInviteeReq) returns (GetInviteeResp) {
+    }
+    rpc SetInvitee (SetInviteeReq) returns (SetInviteeResp) {
+    }
+    rpc GetLowerUser (GetInviteeReq) returns (GetLowerUserResp) {
+    }
+}

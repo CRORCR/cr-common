@@ -1,0 +1,12 @@
+所有 ,omitempty 字段替换为空
+uniqueUid json改成 uuid
+engineAccount json改成uuid
+uniMember json改成uuid
+
+protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/base/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/engine_order/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/his_otc/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/his_transfer/*.proto
+protoc --go_out=plugins=grpc,paths=source_relative:.  infrastructure/proto/his_api/his_wallet/*.proto
+
+protoc --go_out=plugins=grpc,paths=source_relative:.  proto/invitee/*.proto

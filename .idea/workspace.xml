@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f6e0d3-8ee5-4c51-987e-074699e7ab1f" name="Default Changelist" comment="">
+    <list default="true" id="b5f6e0d3-8ee5-4c51-987e-074699e7ab1f" name="Default Changelist" comment="add .">
+      <change afterPath="$PROJECT_DIR$/proto/df-common-readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proto/invitee/invitee.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proto/partner/user.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/engine_order/order.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/engine_order/order.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/engine_order/order.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/engine_order/order.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_otc/otc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_otc/otc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_otc/otc.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_otc/otc.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_transfer/his_transfer.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_transfer/his_transfer.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_transfer/his_transfer.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_transfer/his_transfer.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/his_wallet/his_wallet.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/his_wallet/his_wallet.proto" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,69 +15,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="16" selection-start-line="16" selection-end-line="36" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go">
+        <entry file="file://$PROJECT_DIR$/proto/partner/user.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="182" column="62" lean-forward="true" selection-start-line="182" selection-start-column="62" selection-end-line="182" selection-end-column="62" />
+            <state relative-caret-position="299">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/engine_order/order.proto">
+        <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="54">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/his_otc/otc.proto">
+        <entry file="file://$PROJECT_DIR$/proto/df-common-readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="62" column="18" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
+            <state relative-caret-position="209">
+              <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/his_transfer/his_transfer.proto">
+        <entry file="file://$PROJECT_DIR$/proto/invitee/invitee.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-52">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/engine_order/order.pb.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="e#111#362#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="318">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -117,6 +91,7 @@
       <find>Pagination</find>
       <find>,omitempty</find>
       <find>uniMember</find>
+      <find>GetInviteeReq</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -150,15 +125,18 @@
         <option value="$PROJECT_DIR$/proto/engine_order/order.proto" />
         <option value="$PROJECT_DIR$/proto/his_transfer/his_transfer.proto" />
         <option value="$PROJECT_DIR$/proto/his_wallet/his_wallet.proto" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go" />
         <option value="$PROJECT_DIR$/proto/his_otc/otc.pb.go" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/proto/invitee/invitee.proto" />
+        <option value="$PROJECT_DIR$/proto/df-common-readme" />
+        <option value="$PROJECT_DIR$/proto/partner/user.proto" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="39" />
-    <option name="width" value="1389" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1385" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectView">
@@ -166,6 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +156,12 @@
               <item name="cr-common" type="b2602c69:ProjectViewProjectNode" />
               <item name="cr-common" type="462c0819:PsiDirectoryNode" />
               <item name="proto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cr-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cr-common" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cr-common" type="b2602c69:ProjectViewProjectNode" />
@@ -202,11 +187,16 @@
               <item name="proto" type="462c0819:PsiDirectoryNode" />
               <item name="his_wallet" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cr-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cr-common" type="462c0819:PsiDirectoryNode" />
+              <item name="proto" type="462c0819:PsiDirectoryNode" />
+              <item name="partner" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,7 +207,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/proto/engine_order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/proto/invitee" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -230,11 +220,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/proto/invitee" />
+      <recent name="$PROJECT_DIR$/proto/partner" />
       <recent name="$PROJECT_DIR$/proto/engine_order" />
       <recent name="$PROJECT_DIR$/proto/otc" />
       <recent name="$PROJECT_DIR$/proto/base" />
-      <recent name="$PROJECT_DIR$/proto/his_wallet" />
-      <recent name="$PROJECT_DIR$/proto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -250,10 +240,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="39" width="1389" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1385" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23311062" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23976173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -266,8 +256,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.30318472" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31847134" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49962825" visible="true" weight="0.31847134" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50037175" side_tool="true" weight="0.31847134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,20 +341,6 @@
     <entry file="file://$PROJECT_DIR$/proto/his_order/his_order.proto" />
     <entry file="file://$PROJECT_DIR$/proto/base/base.go" />
     <entry file="file://$PROJECT_DIR$/proto/base/his_transfer.proto" />
-    <entry file="file://$PROJECT_DIR$/go.sum">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proto/base/base.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -390,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proto/base/base.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proto/otc/otc.proto" />
     <entry file="file://$PROJECT_DIR$/proto/his_transfer/his_transfer.pb.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -405,13 +374,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proto/engine_order/order.pb.go">
+    <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#111#362#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="314">
+          <caret line="182" column="62" lean-forward="true" selection-start-line="182" selection-start-column="62" selection-end-line="182" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -436,24 +402,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/proto/base/base.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="209">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/engine_order/order.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="15" />
+          <folding>
+            <element signature="e#111#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/his_otc/otc.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="16" selection-start-line="16" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go">
+    <entry file="file://$PROJECT_DIR$/proto/invitee/invitee.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="182" column="62" lean-forward="true" selection-start-line="182" selection-start-column="62" selection-end-line="182" selection-end-column="62" />
+        <state relative-caret-position="318">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/df-common-readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/partner/user.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
