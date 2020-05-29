@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5f6e0d3-8ee5-4c51-987e-074699e7ab1f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/invitee/invitee.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/invitee/invitee.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proto/partner/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/partner/user.proto" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.proto">
+        <entry file="file://$PROJECT_DIR$/proto/invitee/invitee.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="396">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -25,42 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proto/partner/user.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/partner/user.pb.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="30" selection-start-line="5" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/df-common-readme">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proto/invitee/invitee.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="133">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -97,6 +64,7 @@
       <find>uniMember</find>
       <find>noticeReq</find>
       <find>GetInviteeReq</find>
+      <find>uuid</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -133,15 +101,16 @@
         <option value="$PROJECT_DIR$/proto/his_wallet/his_wallet.pb.go" />
         <option value="$PROJECT_DIR$/proto/his_otc/otc.pb.go" />
         <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/proto/invitee/invitee.proto" />
         <option value="$PROJECT_DIR$/proto/df-common-readme" />
+        <option value="$PROJECT_DIR$/proto/partner/user.pb.go" />
+        <option value="$PROJECT_DIR$/proto/invitee/invitee.proto" />
         <option value="$PROJECT_DIR$/proto/partner/user.proto" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1485" />
-    <option name="y" value="70" />
+    <option name="x" value="-1558" />
+    <option name="y" value="85" />
     <option name="width" value="1385" />
     <option name="height" value="877" />
   </component>
@@ -252,10 +221,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1485" y="70" width="1385" height="877" extended-state="0" />
+    <frame x="-1558" y="85" width="1385" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24348474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24720775" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,13 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proto/engine_order/order.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proto/his_otc/otc.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
@@ -452,9 +414,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proto/partner/user.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proto/his_wallet/his_wallet.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="68">
           <caret line="16" selection-start-line="16" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
@@ -468,27 +437,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proto/df-common-readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+        <state relative-caret-position="228">
+          <caret line="12" column="64" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/engine_order/order.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-128">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proto/invitee/invitee.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="62" />
+        <state relative-caret-position="396">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proto/partner/user.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proto/partner/user.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="133">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>

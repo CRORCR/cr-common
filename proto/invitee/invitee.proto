@@ -5,14 +5,14 @@ option go_package = "github.com/CRORCR/cr-common/proto/invitee";
 import "proto/base/base.proto";
 
 message GetInviteeReq {
-    string uuid             = 1; //查询用户上级链表
-    string invitee_account  = 2; //查询用户一级邀请
+    string user_id             = 1; //查询用户上级链表
+    string pre_invite_user_id  = 2; //查询用户一级邀请
 }
 
 message GetInviteeResp {
-    string uuid             = 1;
-    string invitee_account  = 2; //上级用户
-    string partner_account  = 3; //一级用户
+    string user_id             = 1;
+    string pre_invite_user_id  = 2; //上级用户
+    string root_user_id        = 3; //一级用户
     string invitee_info     = 4; //邀请链表
     string created_at       = 5;
     string updated_at       = 6;
@@ -20,9 +20,9 @@ message GetInviteeResp {
 
 message GetLowerUserResp {
     message Data {
-        string uuid             = 1;
-        string invitee_account  = 2; //上级用户
-        string partner_account  = 3; //一级用户
+        string user_id             = 1;
+        string pre_invite_user_id  = 2; //上级用户
+        string root_user_id     = 3; //一级用户
         string invitee_info     = 4; //邀请链表
         string created_at       = 5;
         string updated_at       = 6;
@@ -32,8 +32,8 @@ message GetLowerUserResp {
 }
 
 message SetInviteeReq {
-    string uuid             = 1;
-    string invitee_account  = 2;
+    string user_id             = 1;
+    string pre_invite_user_id  = 2;
 }
 
 message SetInviteeResp {
