@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package partner;
+option go_package = "github.com/CRORCR/cr-common/proto/notice";
+
+message GetNoticeReq {
+    string user_id = 1; //查询用户上级链表
+}
+
+message GetNoticeResp {
+    string user_id      = 1;
+    string type         = 2; //通知类型 1:邀请通知 2:其他
+    string content      = 3; //正文
+    string updated_at   = 4;
+    string created_at   = 5;
+    string status       = 6; //1:待查阅 2:已经查阅
+}
+
+//拒绝邀请
+message ReadReq {
+    string user_id     = 1;
+}
+
+message ReadResp {
+    string date           = 1;
+    string error_message  = 2;
+}
+
+service Notice {
+    rpc GetNotice (GetNoticeReq) returns (GetNoticeResp) {
+    }
+    rpc Read (ReadReq) returns (ReadResp) {
+    }
+}
