@@ -5,8 +5,12 @@ option go_package = "github.com/CRORCR/cr-common/proto/invitee";
 import "proto/base/base.proto";
 
 message GetInviteeReq {
-    string user_id             = 1; //查询用户上级链表
-    string pre_invite_user_id  = 2; //查询用户一级邀请
+    string user_id              = 1; //查询用户上级链表
+    string pre_invite_user_id   = 2; //查询用户一级邀请
+    string start_time           = 3;
+    string end_time             = 4;
+    int32  page                 = 5;
+    int32  size                 = 6;
 }
 
 message GetInviteeResp {
